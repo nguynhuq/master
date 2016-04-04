@@ -1,7 +1,5 @@
 package com.polyglotapp.server.data.config.cassandra;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -25,8 +23,6 @@ public class CassandraConfig {
 	 
 	 @Autowired
 	 private Environment env;
-	 
-	 private static final Logger LOGGER = LoggerFactory.getLogger(CassandraConfig.class);
 	 
 	 @Bean
 	 public CassandraClusterFactoryBean cluster() {
